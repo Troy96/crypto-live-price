@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Vue App for Cryptocurrency Comparison</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Fredoka+One" rel="stylesheet">
+	<style>
+		.card-title, h3{
+			font-family: 'Fredoka One', cursive;
+		}
+	 	.card .card-action{
+			background-color: #735c73;
+		}
+		p{
+			color: #fff;
+		}
+	</style>
+</head>
+<body>
+	<div class="container" id="app">
+		<h3 class="valign center">Top Cryptocurrencies Live Pricing</h3>
+
+	
+	<div class="row">
+    <div class="col m4" v-for="(result, index) in results">
+      <div class="card">
+       	<div class="card-title valign center">{{ index }}</div>
+        <div class="card-action">
+          <p>$ {{ result.USD }}</p>
+        </div>
+        <div class="card-content">
+        	<p>&#8364 {{ result.EUR }}</p>
+      	</div>
+        <div class="card-action">
+          <p>&#8377 {{ result.INR }}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+	<script src="https://unpkg.com/vue"></script>
+	<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+	<script src="vueApp.js"></script>
+	
+
+</body>
+</html>

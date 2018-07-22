@@ -1,0 +1,14 @@
+{
+  "name": "first-vue-app",
+  "version": "1.0.0",
+  "description": "First Vue.js app that makes use of third-party API",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Tuhin Roy",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.18.0"
+  }
+}
